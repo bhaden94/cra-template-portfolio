@@ -18,15 +18,14 @@ export interface IAboutObject {
 
 export function AboutObject(): IAboutObject {
 	return {
-		name: "Brady Haden",
+		name: "Your Name",
 		title: "Software Engineer",
 		landingOpener: [
 			'"There\'s a way to do it better. Find it."',
 			"- Thomas Edison",
 		],
 		headline:
-			"Hi I am Brady, a Software Engineer and United States Air Force veteran " +
-			"passionate about making a difference through code!",
+			"Who are you and what do you bring to the table.",
 		strengths: [
 			{
 				short: "Beautifully Simplistic UI",
