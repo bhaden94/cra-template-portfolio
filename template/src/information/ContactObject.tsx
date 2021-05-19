@@ -24,20 +24,20 @@ export function ContactObject(iconClass: string): IContactObject[] {
 	return [
 		{
 			name: "Github",
-			link: "https://github.com/bhaden94",
+			link: "https://github.com/<your-github>",
 			text: "See me on GitHub",
 			icon: <GitHubIcon fontSize="large" className={iconClass} />,
 		},
 		{
 			name: "LinkedIn",
-			link: "https://www.linkedin.com/in/brady-haden/",
+			link: "https://www.linkedin.com/in/<your-linkedin>/",
 			text: "Connect on LinkedIn",
 			icon: <LinkedInIcon fontSize="large" className={iconClass} />,
 		},
 		{
 			name: "Email",
 			link:
-				"mailto:brady.s.haden@gmail.com?subject=Greetings From Portfolio",
+				"mailto:<your-email>",
 			text: "Send me an email",
 			icon: <AlternateEmailIcon fontSize="large" className={iconClass} />,
 		},
