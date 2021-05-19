@@ -1,8 +1,8 @@
 {
     "name": "cra-template-tsmaterialui-portfolio",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "license": "MIT",
-    "author": "Brady Haden",
+    "author": "Brady Haden (https://bradyhaden.com)",
     "engines": {
         "node": ">=14"
     },
