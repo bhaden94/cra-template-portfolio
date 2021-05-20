@@ -19,8 +19,12 @@ export interface IExperienceObject {
     Follow the examples given and put your own past jobs in
 
     note: put the experience objects in the order they should appear on the page
+	
+	If a technology that you need is not listed go to TechnologiesObject.tsx to import it
 */
 export function ExperienceObject(): IExperienceObject[] {
+	// The number passed in here is the size of the technology icons
+	// You can change this to make the icons smaller or larger
 	const tech: ITechnologiesObject = TechnologiesObject(35);
 
 	return [

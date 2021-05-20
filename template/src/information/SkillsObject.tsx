@@ -14,7 +14,7 @@ export interface ISkillsObject {
 	The tech array will need an object for each technology you add.
 	The name is what will appear below the icon and the icon comes from the
 	TechologiesObj.tsx file. 
-	If there is an icon that is not there go to https://simpleicons.org/
+	If there is an icon that is not there go to https://simple-icons.github.io/simple-icons-website/
 	to find more and import them in TechologiesObj.tsx
 */
 export function SkillsObject(): ISkillsObject[] {

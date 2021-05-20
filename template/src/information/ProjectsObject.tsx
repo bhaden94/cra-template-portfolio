@@ -30,6 +30,8 @@ export interface IProjectObject {
 		techUsed
 */
 export function ProjectObject(): IProjectObject[] {
+	// The number passed in here is the size of the technology icons
+	// You can change this to make the icons smaller or larger
 	const tech: ITechnologiesObject = TechnologiesObject(35);
 
 	// make sure projects are in the order you want them displayed
