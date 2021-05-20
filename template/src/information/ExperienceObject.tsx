@@ -1,7 +1,8 @@
-import MicrosoftLogo from "../images/experience/microsoft-logo.jpg";
-import AwsLogo from "../images/experience/aws-logo.jpg"
 import { ITechnologiesObject, TechnologiesObject } from "./TechnologiesObject";
 
+/* Section to import company logo */
+import MicrosoftLogo from "../images/experience/microsoft-logo.jpg";
+import AwsLogo from "../images/experience/aws-logo.jpg";
 export interface IExperienceObject {
 	startDate: Date;
 	endDate: Date | string;
