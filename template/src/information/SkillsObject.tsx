@@ -18,23 +18,30 @@ export interface ISkillsObject {
 	to find more and import them in TechologiesObj.tsx
 */
 export function SkillsObject(): ISkillsObject[] {
+	// The number passed in to TechnologiesObject is the size of the Skills icons
+	// You can change this if you want the icons to be smaller or larger.
 	const tech: ITechnologiesObject = TechnologiesObject(75);
 
 	return [
+		{
+			title: "General Programming",
+			tech: [
+				{
+					name: "JavaScript",
+					icon: tech.javascript
+				},
+				{
+					name: "Java",
+					icon: tech.java
+				},
+			]
+		}
 		{
 			title: "Frontend",
 			tech: [
 				{
 					name: "React",
 					icon: tech.react,
-				},
-				{
-					name: "JavaScript",
-					icon: tech.javascript,
-				},
-				{
-					name: "TypeScript",
-					icon: tech.typescript,
 				},
 				{
 					name: "HTML5",
@@ -50,14 +57,6 @@ export function SkillsObject(): ISkillsObject[] {
 			title: "Backend",
 			tech: [
 				{
-					name: "Java",
-					icon: tech.java,
-				},
-				{
-					name: "Spring",
-					icon: tech.spring,
-				},
-				{
 					name: "NodeJS",
 					icon: tech.node,
 				},
@@ -72,48 +71,6 @@ export function SkillsObject(): ISkillsObject[] {
 				{
 					name: "MySQL",
 					icon: tech.mysql,
-				},
-			],
-		},
-		{
-			title: "Workflow",
-			tech: [
-				{
-					name: "GitLab",
-					icon: tech.gitlab,
-				},
-				{
-					name: "GitHub",
-					icon: tech.github,
-				},
-				{
-					name: "Git",
-					icon: tech.git,
-				},
-				{
-					name: "Jira",
-					icon: tech.jira,
-				},
-			],
-		},
-		{
-			title: "Other",
-			tech: [
-				{
-					name: "Docker",
-					icon: tech.docker,
-				},
-				{
-					name: "SonarQube",
-					icon: tech.sonarqube,
-				},
-				{
-					name: "Grafana",
-					icon: tech.grafana,
-				},
-				{
-					name: "Heroku",
-					icon: tech.heroku,
 				},
 			],
 		},
