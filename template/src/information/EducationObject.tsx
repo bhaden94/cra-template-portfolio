@@ -20,33 +20,27 @@ export interface IEducationObject {
 export function EducationObject(): IEducationObject[] {
 	return [
 		{
-			degree: "Full Stack Software Engineer Bootcamp",
-			school: "Galvanize",
-			schoolLink: "https://www.galvanize.com/",
-			dateFinished: new Date(2020, 9, 0),
+			degree: "Full Stack Software Developer Bootcamp",
+			school: "Lambda School",
+			schoolLink: "https://lambdaschool.com/",
+			dateFinished: new Date(2022, 3, 0),
 			bullets: [
-				"Selected from applicant pool of 323 to participate in the first ever Digital Airman Internship Program in the Air Force",
+				"Led team of 4 developers to create awesome application",
 				"Collaborated with other developers on group projects and established a project workflow using Git & GitHub",
 			],
 		},
 		{
-			degree: "Bachelor of Science (B.S.) Information Computer Science",
-			school: "Park University",
-			schoolLink: "https://www.park.edu/",
-			dateFinished: new Date(2022, 5, 0),
+			degree: "Bachelor of Science (B.S.) Computer Science",
+			school: "MIT",
+			schoolLink: "https://www.mit.edu/",
 			bullets: [
-				"Tutored 21 students a total of 228 hours in Java and C++ OOP advanced topics, Discrete Math, and Data Structures & Algorithms",
+				"Became really good at Data Structures & Algorithms",
 			],
 		},
 		{
-			degree: "Associate of Applied Science (AAS) Intelligence Studies and Technology",
-			school: "Community College of the Air Force",
+			degree: "Associate of Applied Science (AAS) Liberal Arts",
+			school: "Some College",
 			dateFinished: new Date(2020, 8, 0),
-		},
-		{
-			degree: "Associate of Applied Science (AAS) Aviation Maintenance Technology",
-			school: "Community College of the Air Force",
-			dateFinished: new Date(2017, 5, 0),
 		},
 	];
 }

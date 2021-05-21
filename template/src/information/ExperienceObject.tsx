@@ -1,11 +1,8 @@
-import Logo1 from "../images/experience/af-logo.jpg";
-import Logo3 from "../images/experience/JD-logo.png";
-import Logo2 from "../images/experience/levelup-logo.png";
-import Logo4 from "../images/experience/microsoft-logo.jpg";
-import {
-	ITechnologiesObject, TechnologiesObject
-} from "./TechnologiesObject";
+import { ITechnologiesObject, TechnologiesObject } from "./TechnologiesObject";
 
+/* Section to import company logo */
+import MicrosoftLogo from "../images/experience/microsoft-logo.jpg";
+import AwsLogo from "../images/experience/aws-logo.jpg";
 export interface IExperienceObject {
 	startDate: Date;
 	endDate: Date | string;
@@ -22,8 +19,12 @@ export interface IExperienceObject {
     Follow the examples given and put your own past jobs in
 
     note: put the experience objects in the order they should appear on the page
+	
+	If a technology that you need is not listed go to TechnologiesObject.tsx to import it
 */
 export function ExperienceObject(): IExperienceObject[] {
+	// The number passed in here is the size of the technology icons
+	// You can change this to make the icons smaller or larger
 	const tech: ITechnologiesObject = TechnologiesObject(35);
 
 	return [
@@ -32,20 +33,21 @@ export function ExperienceObject(): IExperienceObject[] {
 			endDate: "Present",
 			title: "Software Engineer",
 			company: "Microsoft",
-			bullets: ["To be determined..."],
-			media: Logo4,
+			bullets: ["Did cool stuff", "Did more really cool stuff"],
+			media: MicrosoftLogo,
 			techUsed: [tech.azure, tech.postgresql, tech.mysql, tech.csharp],
 		},
 		{
-			startDate: new Date(2021, 1, 0),
-			endDate: new Date(2021, 3, 0),
-			title: "Cloud Software Engineer Intern",
-			company: "John Deere",
+			startDate: new Date(2021, 6, 0),
+			endDate: new Date(2021, 9, 0),
+			title: "Software Engineer Intern",
+			company: "Amazon Web Services",
 			bullets: [
-				"Designed and deployed automated aggregation for AWS indexes that summarized timeframes of data",
-				"Created documentation on how teams could utilize machine learning algorithms to alert when anomalous data is found in real time",
+				"Did sweet intern stuff",
+				"Did another really cool thing",
+				"Completed a really cool feature",
 			],
-			media: Logo3,
+			media: AwsLogo,
 			techUsed: [
 				tech.aws,
 				tech.python,
@@ -53,65 +55,6 @@ export function ExperienceObject(): IExperienceObject[] {
 				tech.elasticsearch,
 				tech.github,
 			],
-		},
-		{
-			startDate: new Date(2020, 9, 0),
-			endDate: new Date(2020, 12, 0),
-			title: "Full Stack Software Engineer Intern",
-			company: "LevelUP Code Works Software Factory",
-			bullets: [
-				"Wrote Java/Spring tests for application backend which increased code coverage by 65% and met agile milestone 1 week ahead of time",
-				"Prototyped dashboard with Grafana, Python, PostgreSQL, and Jira/GitLab API to showcase agile metrics such as cycle time & lead time",
-				"Gained approval and updated Angular application frontend to official LTS version to ease future development and decrease complexity",
-				"Participated in DevSecOps culture by putting security at the forefront of each decision and communicating implications of vulnerabilities",
-				"Built and modified Nginx configuration script for application to increase security by blocking XSS/SSH attacks and limiting allowable domains",
-				"Modified Docker configuration to use Department of Defense hardened images for application frontend and backend to increase security",
-			],
-			media: Logo2,
-			techUsed: [
-				tech.java,
-				tech.typescript,
-				tech.python,
-				tech.node,
-				tech.angular,
-				tech.spring,
-				tech.docker,
-				tech.gitlab,
-				tech.bootstrap,
-				tech.nginx,
-				tech.grafana,
-				tech.sonarqube,
-				tech.rancher,
-				tech.mattermost,
-			],
-		},
-		{
-			startDate: new Date(2018, 9, 0),
-			endDate: new Date(2021, 2, 5),
-			title: "Intelligence Analyst (Fusion Analyst)",
-			company: "United States Air Force",
-			bullets: [
-				"Communicated valuable threat warning reports that were further briefed to the National Security Council and POTUS",
-				"Responsible for quality control on 1000+ reports per year, obtaining 99% accuracy rate each period, well above standard",
-				"Conducted bi-annual job performance, goal setting, and career growth counseling for 3 team members",
-			],
-			media: Logo1,
-			description:
-				"Produced/presented topical high-interest technical & operational intelligence briefings to leadership.",
-		},
-		{
-			startDate: new Date(2014, 8, 0),
-			endDate: new Date(2018, 9, 0),
-			title: "Aerospace Maintenance Technician",
-			company: "United States Air Force",
-			bullets: [
-				"Led team of 4 technicians to recover F-18 on runway; restored international airport to active status 75% faster than average recovery times",
-				"Worked with a 10-person team to recover collapsed private plane; cleared international airport runway in less than 1 hour",
-				"Responded to last minute pre-flight problem for critical Secretary of Defense mission; troubleshot and repaired C-17 cargo ramp that ensured on time take-off",
-			],
-			media: Logo1,
-			description:
-				"Specialized in troubleshooting, rigging, and repair of C-17 aircraft flight controls, landing gear, ramp & door. Crash recovery personnel.",
 		},
 	];
 }

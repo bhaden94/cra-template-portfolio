@@ -1,5 +1,5 @@
 import { PropTypes } from "@material-ui/core";
-import { blueGrey, grey, teal, amber } from "@material-ui/core/colors";
+import { grey, blue } from "@material-ui/core/colors";
 
 interface ILightDarkTheme {
 	primary: string | PropTypes.Color;
@@ -31,8 +31,8 @@ export interface IThemeObject {
 export function ThemeObject(): IThemeObject {
 	return {
 		light: {
-			primary: teal[900],
-			secondary: amber[600],
+			primary: grey[900],
+			secondary: blue[800],
 			background: {
 				paper: grey[50],
 				default: grey[200],
@@ -43,11 +43,11 @@ export function ThemeObject(): IThemeObject {
 			},
 		},
 		dark: {
-			primary: teal[500],
-			secondary: amber[800],
+			primary: grey[600],
+			secondary: blue[800],
 			background: {
-				paper: blueGrey[900],
-				default: blueGrey[800],
+				paper: grey[900],
+				default: grey[800],
 			},
 			text: {
 				primary: "#fff",
