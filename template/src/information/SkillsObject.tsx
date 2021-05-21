@@ -35,7 +35,7 @@ export function SkillsObject(): ISkillsObject[] {
 					icon: tech.java
 				},
 			]
-		}
+		},
 		{
 			title: "Frontend",
 			tech: [
