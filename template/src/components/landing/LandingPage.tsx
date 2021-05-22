@@ -27,9 +27,9 @@ function LandingPage() {
 				[theme.breakpoints.down("sm")]: {
 					fontSize: "2.5rem",
 				},
-				color: about.landingOpenerColorOverride
-					? about.landingOpenerColorOverride
-					: theme.palette.text.primary,
+				color:
+					about.landingOpenerColorOverride ||
+					theme.palette.text.primary,
 			},
 		})
 	);
@@ -39,7 +39,12 @@ function LandingPage() {
 		<div className={classes.container}>
 			<div className={classes.textContainer}>
 				{about.landingOpener.map((str: string, i: number) => (
-					<Typography key={i} variant="h2" className={classes.text}>
+					<Typography
+						key={i}
+						variant="h2"
+						className={classes.text}
+						data-testid="landing-opener-text"
+					>
 						{str}
 					</Typography>
 				))}
