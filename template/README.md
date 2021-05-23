@@ -1,16 +1,17 @@
-# Portfolio Template
+# React Portfolio Template
 
 ### Start the development server
 ```sh
 npm start
 ```
 
+<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 * [Customizable Parts](#customizable-parts)
 * [GitHub Actions Deployment](#github-actions-deployment)
 * [Using A Custom Domain](#using-a-custom-domain)
 
-<!-- TABLE OF CONTENTS -->
+<!-- HOW TO CUSTOMIZE THE TEMPLATE -->
 ## Cusomizable Parts
 * [Navigation](#navigation)
 * [About](#about)
@@ -32,6 +33,8 @@ npm start
     ### Education
     ### Themes
 
+<!-- SETUP AUTO DEPLOYMENT -->
 ## GitHub Actions Deployment
 
+<!-- CUSTOM DOMAIN USAGE -->
 ## Using A Custom Domain
