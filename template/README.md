@@ -12,7 +12,7 @@ npm start
 * [Using A Custom Domain](#using-a-custom-domain)
 
 <!-- HOW TO CUSTOMIZE THE TEMPLATE -->
-## Cusomizable Parts
+## Customizable Parts
 * [Navigation](#navigation)
 * [About](#about)
 * [Contact](#contact)
