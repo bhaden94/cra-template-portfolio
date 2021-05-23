@@ -13,6 +13,7 @@ npm start
 
 <!-- HOW TO CUSTOMIZE THE TEMPLATE -->
 ## Customizable Parts
+> All the customizable files live in the `src/information` folder.
 * [Navigation](#navigation)
 * [About](#about)
 * [Contact](#contact)
@@ -24,6 +25,14 @@ npm start
 * [Themes](#themes)
 
     ### Navigation
+    * File: NabObjects.tsx
+    * By default all of the navigational items available are there.
+    * You may remove any section you do not want.
+    * The order you put the objects in will be the order they appear in the navbar and throughout the page.
+    * Properties:
+        * `text`: What appears in the sections headers and in the sidebar. You may change this to whatever you want, but **do not change the section property to match**.
+        * `icon`: The icon that appears in the navbar
+        * `section`: **Should not be modified and should stay with the respective section**
     ### About
     ### Contact
     ### Technologies
