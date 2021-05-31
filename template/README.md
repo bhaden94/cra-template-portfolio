@@ -59,7 +59,7 @@ npm start
         * `headline`: The first text in the About section of the page. This should be a good representation of you. It can be short or long, but make it *you*.
         * `strengths`: List of strength objects. What do you do well and why should anyone care?
             * Properties of strength object:
-                * `short`: short description of the strength. Appears intially on the screen.
+                * `short`: Short description of the strength. Appears initially on the screen.
                 * `long`: Longer description of the strength and will appear on hover.
                 * `image`: Link to picture for the strength. Save the images in `src/images/about` and import the same way as the background image. An SVG is recommended for use here and [flaticon](https://www.flaticon.com/) is a great site for some free ones.
     ### Contact
