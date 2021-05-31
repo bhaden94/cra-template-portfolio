@@ -63,7 +63,28 @@ npm start
                 * `long`: Longer description of the strength and will appear on hover.
                 * `image`: Link to picture for the strength. Save the images in `src/images/about` and import the same way as the background image. An SVG is recommended for use here and [flaticon](https://www.flaticon.com/) is a great site for some free ones.
     ### Contact
+    * File: ContactObject.tsx
+    * Properties: 
+        * `name`: The name of the contact medium (e.g: LinkedIn). 
+        * `link`: A link to the social site/contact method.
+            * There is a simple example included for a link to email, but if you would like more control over this see [this article](https://css-tricks.com/snippets/html/mailto-links/) on how to add more.
+        * `text`: Text that appears in the contact section.
+        * `icon`: Icon that appears in the navigation bar footer and in the contact section.
+            * Some social icons are in Material-UI, but not all. You can also import from [simple icons](https://simple-icons.github.io/simple-icons-website/) just like Twitch is imported in the example code.
+            * Make sure to include `className={iconClass}` in whichever icon you use. 
     ### Technologies
+    * File: TechnologiesObject.tsx
+    * Properties: 
+        * This file is a little different from the rest and as such can be custom to an extent.
+        * All the icons will be used through a few different parts of the portfolio.
+        * The best way to modify this section is to just copy one technology that is currently there already and change the name to another icon that exists in [simple icons](https://simple-icons.github.io/simple-icons-website/).
+        * The name of the property is up to you.
+        * There is also some properties within the icons that are used:
+            * `color`: The way it is written currently, we are able to override the default color property so that you can make all icons the same color throughout your portfolio if you wish.
+                * The default color is what is on the right of the `||` and I get that from the simple icons website, but you may put whatever you want here.
+            * `size`: Changes the size of the icons are important since they appear in multiple places arount the portfolio. The default size is 50 which is on the right of `||` and can be overriden when we use the objects. 
+    * We will see how to use these objects in later sections.
+
     ### Skills
     ### Projects
     ### Experience
