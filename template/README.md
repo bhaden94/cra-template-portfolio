@@ -79,7 +79,7 @@ npm start
         * All the icons will be used through a few different parts of the portfolio.
         * The best way to modify this section is to just copy one technology that is currently there already and change the name to another icon that exists in [simple icons](https://simple-icons.github.io/simple-icons-website/).
         * The name of the property is up to you.
-        * There is also some properties within the icons that are used:
+        * There is also attributes within the icons that are used:
             * `color`: The way it is written currently, we are able to override the default color property so that you can make all icons the same color throughout your portfolio if you wish.
                 * The default color is what is on the right of the `||` and I get that from the simple icons website, but you may put whatever you want here.
             * `size`: Changes the size of the icons are important since they appear in multiple places arount the portfolio. The default size is 50 which is on the right of `||` and can be overriden when we use the objects. 
