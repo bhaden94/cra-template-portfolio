@@ -93,8 +93,19 @@ npm start
             * Properties of `tech` object:
                 * `name`: The name of the technology. 
                 * `icon`: The icon used from TechnologiesObject.tsx. Example usage: `icon: tech.aws`. 
-                    * If there is not a technology there that you would like, then simply go back to the [Technologies](#technologies) section and add it.
+                    > If there is not a technology there that you would like, then simply go back to the [Technologies](#technologies) section and add it.
     ### Projects
+    * File: ProjectsObject.tsx
+    * Properties:
+        * `media`: Imported image to use for a Project.
+        * `title`: The name of your project.
+        * `shortDesc`: A short (125 characters or less) description of your project.
+        * `accomplishments`: An array of accomplishments for this project. What did you learn? What if special about this project?
+        * `liveLink` (*optional*): A link to the live application if you have one.
+        > This is a general link icon, so you could link to anything you want here.
+        * `codeLink` (*optionsl*): A link to the code if you have one.
+        > The icon used here is specifically for GitHub.
+        * `techUsed` (*optional*): The technologies leveraged for this project. Use these just like in the skills section.
     ### Experience
     ### Education
     ### Themes
