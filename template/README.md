@@ -81,7 +81,7 @@ npm start
         * The name of the property is up to you.
         * There is also attributes within the icons that are used:
             * `color`: The way it is written currently, we are able to override the default color property so that you can make all icons the same color throughout your portfolio if you wish.
-                * The default color is what is on the right of the `||` and I get that from the simple icons website, but you may put whatever you want here.
+                > The default color is what is on the right of the `||` and I get that from the simple icons website, but you may put whatever you want here.
             * `size`: Changes the size of the icons are important since they appear in multiple places arount the portfolio. The default size is 50 which is on the right of `||` and can be overriden when we use the objects. 
     * We will see how to use these objects in later sections.
 
