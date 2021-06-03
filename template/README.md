@@ -86,6 +86,14 @@ npm start
     * We will see how to use these objects in later sections.
 
     ### Skills
+    * File: SkillsObject.tsx
+    * Properties:
+        * `title`: The section heading that will visually group the skill objects on the page.
+        * `tech`: Objects that show relevant skills.
+            * Properties of `tech` object:
+                * `name`: The name of the technology. 
+                * `icon`: The icon used from TechnologiesObject.tsx. Example usage: `icon: tech.aws`. 
+                    * If there is not a technology there that you would like, then simply go back to the [Technologies](#technologies) section and add it.
     ### Projects
     ### Experience
     ### Education
