@@ -107,8 +107,23 @@ npm start
         > The icon used here is specifically for GitHub.
         * `techUsed` (*optional*): The technologies leveraged for this project. Use these just like in the skills section.
     ### Experience
+    > [JavaScript Date How-To](#javascript-date-object-usage)
+    * File: ExperienceObject.tsx
+    * Properties:
+        * `startDate`: JavaScript `Date` object that shows when you started working somewhere.
+        * `endDate`: JavaScript `Date` object that shows when you stopped working somewhere. Optionally, you can put something like "Present" or "Current" in this if you are still working.
+        * `title`: What was your title.
+        * `company`: What company did you work for.
+        * `bullets`: Array of resume style bullets to show what you did.
+        * `media`: The imported logo of the company should go here.
+        * `description` (*optional*): A description of your job position. This is optional as your bullets should really show what you did, but it can be used as a summary if you would like.
+        * `techUsed` (*optional*): The technologies you leveraged at your job. Used just like in the Skills and Project sections.
     ### Education
     ### Themes
+
+    #### JavaScript Date Object Usage
+    * Example usage for Experience and Education sections: `new Date(year, month, day)`
+        > Do not put a leading zero for months or days. 
 
 <!-- SETUP AUTO DEPLOYMENT -->
 ## GitHub Actions Deployment
