@@ -111,7 +111,7 @@ npm start
     * File: ExperienceObject.tsx
     * Properties:
         * `startDate`: JavaScript `Date` object that shows when you started working somewhere.
-        * `endDate`: JavaScript `Date` object that shows when you stopped working somewhere. Optionally, you can put something like "Present" or "Current" in this if you are still working.
+        * `endDate`: JavaScript `Date` object that shows when you stopped working somewhere. Optionally, you can put something like "Present" or "Current" in this if you are still work*ing.
         * `title`: What was your title.
         * `company`: What company did you work for.
         * `bullets`: Array of resume style bullets to show what you did.
@@ -119,6 +119,14 @@ npm start
         * `description` (*optional*): A description of your job position. This is optional as your bullets should really show what you did, but it can be used as a summary if you would like.
         * `techUsed` (*optional*): The technologies you leveraged at your job. Used just like in the Skills and Project sections.
     ### Education
+    > [JavaScript Date How-To](#javascript-date-object-usage)
+    * File: EducationObject.tsx
+    * Properties:
+        * `degree`: Name of your degree.
+        * `school`: School you went to.
+        * `schoolLink` (*optional*): Add a link to your schools website if you would like.
+        * `dateFiished` (*optional*):  JavaScrit Date object that shows when you finished. This can also be an estimated future date.
+        * `bullets` (*optional*): Array of accomplishments while you were getting educated. This is optional, but is good for bootcamps to highlight some of what you did.
     ### Themes
 
     #### JavaScript Date Object Usage
