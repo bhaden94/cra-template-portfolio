@@ -128,6 +128,20 @@ npm start
         * `dateFiished` (*optional*):  JavaScrit Date object that shows when you finished. This can also be an estimated future date.
         * `bullets` (*optional*): Array of accomplishments while you were getting educated. This is optional, but is good for bootcamps to highlight some of what you did.
     ### Themes
+    > Congrats, you have made it to the best part!! Let's style the portfolio.
+    * File: ThemeObject.tsx
+    * Properties:
+        * Here we will have two base properties. One for light theme and one for a dark theme.
+        * Within those you have additional properties that control the theme:
+            * `primary`: This will adjust the color of the icons, heading banners, and some text.
+            * `secondary`: This will mainly adjust the hover color of items.
+            * `background`
+                * `paper`: The background color of boxes and the navigation section. Like the Skills groups or the Strengths in the about section.
+                * `default`: The background of the page.
+            * `text`
+                * `primary`: Color of headind text.
+                * `secondary`: Color of paragraph and navigational text.
+    * You may use any sort of valid HTML color. Material-UI also has their own [color palletes](https://material-ui.com/customization/color/) to use. This is what you see in the example code.
 
     #### JavaScript Date Object Usage
     * Example usage for Experience and Education sections: `new Date(year, month, day)`
