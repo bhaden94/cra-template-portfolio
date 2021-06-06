@@ -2,10 +2,16 @@
 
 # Usage
 
+From NPM
 ```sh
 npx create-react-app my-app --template portfolio
 ```
 > [React Template Documentation](https://create-react-app.dev/docs/custom-templates/)
+
+Template is on local machine
+```sh
+npx create-react-app my-app --template file:../path/to/template/cra-template-portfolio
+```
 
 # Features
 * Ready to go low code professional portfolio.
