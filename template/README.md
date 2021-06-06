@@ -158,7 +158,7 @@ npm start
 3. Create Personal accesss token
     * Got the the [Personal access tokens](https://github.com/settings/tokens) area and click `Generate new token`.
         * Note: `deploy-access`
-        * Select scopes: `repostatus, repo_deployment, public_repo, repoinvite`
+        * Select scopes: `repo:status, repo_deployment, public_repo, repo:invite`
     * **Copy the generated token.**
 4. Create Secret named `ACTIONS_DEPLOY_ACCESS_TOKEN` and paste the access token into the value field.
      * Go to the settings tab under your repository
@@ -166,7 +166,9 @@ npm start
      * Name: `ACTIONS_DEPLOY_ACCESS_TOKEN`
      * Value: Paste the Personal access token
 5. Push code to **master branch** and wait for deployment.
-    * `git push -u origin master`
+    * `git remote add origin git@github.com:{GitHubUsername}/{RepositoryName}.git`
+        > This assumes SSH is being used. See [documentation on connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+    * `git commit -am "deployment commit" && git push -u origin master`
 6. After a few minutes your site can be found at `https://{GitHubUserName}.github.io/{RepositoryName}`
 
 <!-- CUSTOM DOMAIN USAGE -->
