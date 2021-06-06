@@ -47,6 +47,7 @@
                 "index.tsx",
                 "serviceWorker.ts"
             ]
-        }
+        },
+        "homepage": "https://{GitHubUsername}.github.io/{RepositoryName}"
     }
 }

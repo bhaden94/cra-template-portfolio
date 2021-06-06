@@ -150,6 +150,24 @@ npm start
 
 <!-- SETUP AUTO DEPLOYMENT -->
 ## GitHub Actions Deployment
+1. [Create repository on GitHub](https://docs.github.com/en/github/getting-started-with-github/quickstart/create-a-repo)
+    * Only fill in the Repository name and Description if you would like. The rest should remain the default values.
+2. Modify the homepage property in `package.json`
+    * Replace {GithubUsername} with your Github Username.
+    * Replace {RepositoryName} with the created repositories name.
+3. Create Personal accesss token
+    * Got the the [Personal access tokens](https://github.com/settings/tokens) area and click `Generate new token`.
+        * Note: `deploy-access`
+        * Select scopes: `repostatus, repo_deployment, public_repo, repoinvite`
+    * **Copy the generated token.**
+4. Create Secret named `ACTIONS_DEPLOY_ACCESS_TOKEN` and paste the access token into the value field.
+     * Go to the settings tab under your repository
+     * In the left sidebar, click Secrets and then New repository seceret.
+     * Name: `ACTIONS_DEPLOY_ACCESS_TOKEN`
+     * Value: Paste the Personal access token
+5. Push code to **master branch** and wait for deployment.
+    * `git push -u origin master`
+6. After a few minutes your site can be found at `https://{GitHubUserName}.github.io/{RepositoryName}`
 
 <!-- CUSTOM DOMAIN USAGE -->
 ## Using A Custom Domain
