@@ -156,7 +156,7 @@ npm start
     * Replace {GithubUsername} with your Github Username.
     * Replace {RepositoryName} with the created repositories name.
 3. Create Personal accesss token
-    * Got the the [Personal access tokens](https://github.com/settings/tokens) area and click `Generate new token`.
+    * Go to the [Personal access tokens](https://github.com/settings/tokens) area and click `Generate new token`.
         * Note: `deploy-access`
         * Select scopes: `repo:status, repo_deployment, public_repo, repo:invite`
     * **Copy the generated token.**
